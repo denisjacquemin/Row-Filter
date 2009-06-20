@@ -1,0 +1,26 @@
+= Row filter
+
+A javascript table filter library using Prototype
+
+Tested with {Prototype}[http://www.prototypejs.org] 1.6.0.3
+
+== Example of use
+
+  <table id="my_table">
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+    <tr><td>11</td><td>22</td><td>33</td><td>44</td></tr>
+    <tr><td>1a</td><td>2b</td><td>3c</td><td>4d</td></tr>
+    <tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+    <tr><td>dfdff1</td><td>cvdfdf</td><td>dfdfdf</td><td>dfdff</td></tr>
+  </table>
+
+  <script>
+    var rf = new RowFilter('my_table')
+  </script>
+  <input type="text" id="filter" onkeyup="rf.filter(this.value);">
+
+== Credits
+
+Author {Denis Jacquemin}[http://github.com/denisjacquemin].
+
+Copyright (c) 2009 Denis Jacquemin, released under the MIT license
