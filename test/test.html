@@ -1,29 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-	<title>test</title>
-<script src="prototype-1.6.0.3.js" type="text/javascript"></script>
-<script src="../row_filter.js" type="text/javascript"></script>
-
-</head>
-<body>
-  <table id="my_table">
-    <tbody  id="my_tbody">
-	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-	<tr><td>11</td><td>22</td><td>33</td><td>44</td></tr>
-	<tr><td>1a</td><td>2b</td><td>3c</td><td>4d</td></tr>
-	<tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
-	<tr><td>dfdff1</td><td>cvdfdf</td><td>dfdfdf</td><td>dfdff</td></tr>
-	</tbody>
-  </table>
-  <script>
-    var rf = new RowFilter('my_table')
-    
-  </script>
-  <input type="text" id="filter" onkeyup="rf.filter(this.value);">
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>test</title>
+    <script src="prototype-1.6.0.3.js" type="text/javascript"></script>
+    <script src="../row_filter.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table id="my_table">
+      <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+        <tr><td>11</td><td>22</td><td>33</td><td>44</td></tr>
+        <tr><td>1a</td><td>2b</td><td>3c</td><td>4d</td></tr>
+        <tr><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+        <tr><td>dfdff1</td><td>cvdfdf</td><td>dfdfdf</td><td>dfdff</td></tr>
+      </tbody>
+    </table>
+    <script>
+      var rf = new RowFilter('my_table')
+    </script>
+    <input type="text" id="filter" onkeyup="rf.filter(this.value);">
+  </body>
 </html>

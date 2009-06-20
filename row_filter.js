@@ -14,7 +14,7 @@ var RowFilter = Class.create({
   },
   
   rows: function() {
-    return $$( '#' + this.table.id + ' tr');
+    return $$( '#' + this.table.id + ' tbody tr');
   },
   
   filter: function(pattern) {
